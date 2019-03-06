@@ -1,8 +1,10 @@
 body {
  font-family: Arial, Helvetica, sans-serif;
+ background-color: gray;
 }
 h1 {
- color: yellow;
+ color: orange;
+ background-color: navy;
  text-align: center;
 }
 
