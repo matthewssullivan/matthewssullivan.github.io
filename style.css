@@ -1,5 +1,11 @@
 font-family: Arial, Helvetica, sans-serif;
+
+#h1{
+ color: orange;
+ background-color; blue;
+}
+
 #Links{
-background-color: grey;
+background-color: gray;
 padding: 10px;
 }
