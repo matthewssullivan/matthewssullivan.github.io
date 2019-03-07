@@ -1,14 +1,70 @@
 body {
  font-family: Arial, Helvetica, sans-serif;
- background-color: gray;
+ background: #383838;
 }
-h1 {
+.title h1 {
  color: darkorange;
- background-color: navy;
+ font-size: 72px;
  text-align: center;
+ border-style: solid;
+ border-color: darkorange;
 }
 
-Links {
-background-color: gray;
-padding: 10px;
+.navbar {
+	height: 100%;
+	width: 180px;
+	position: fixed;
+	z-index: 1;
+	top:0;
+	left:0;
+	background-color: #282828;
+	overflow-x:hidden;
+	padding-top: 160px;
+}
+
+.navbar a {
+	padding: 20px 8px 6px 16px;
+	text-decoration: none;
+	color: darkorange;
+	font-size: 25px;
+	display:block;
+}
+
+.navbar a:hover {
+	color: #f1f1f1;
+}
+
+
+.rightbar {
+	height: 100%;
+	width: 180px;
+	position: fixed;
+	z-index: 1;
+	top:0;
+	right:0;
+	background-color: #282828;
+	overflow-x:hidden;
+	padding-top: 20px;
+}
+.rightbar p {
+	padding: 10px 10px 10px 10px;
+	position: absolute;
+	bottom: 10px;
+	border-style: solid;
+	border-color: white;
+    font-size: 12px;
+	color: white;
+}
+
+.main {
+  margin-left: 180px;
+  margin-right: 180px;
+  color: #E8E8E8;
+}
+
+.main a {
+	color: darkorange;
+}
+.main a:visited{
+	color: darkorange;
 }
