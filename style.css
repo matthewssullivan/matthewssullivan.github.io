@@ -47,6 +47,7 @@ body {
 
  @media only screen and (max-width: 700px) {
  #rightbar{
+  width: 1%;
   display: none;
   }
   }
