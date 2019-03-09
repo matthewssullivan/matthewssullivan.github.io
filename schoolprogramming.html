@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
 <title>Matt Sullivan</title>
+<script>
+function open_menu(){
+  document.getElementById("navbar").style.width = "200px";
+}
+function close_menu(){
+  document.getElementById("navbar").style.width = "0"; 
+}
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <link rel="stylesheet" href="style.css">
 
 <body>
+<button class="menuButton" id="navbut" onclick="open_menu()">&#9776</button>
+
   <div class="title">
 <h1>Programming Assignments</h1>
   </div>
@@ -20,7 +30,9 @@
 			<a href="https://en.wikipedia.org/wiki/Conway%27s_Game_of_Life">Conway's Game of Life</a>. It was one
 			of my first encounters with Object Oriented Design.</p>
 
+
 			<a href = "https://github.com/matthewssullivan/GameOfLife">Link to Project</a>
+
 		<br>
 		<br>
 		<br>
@@ -70,7 +82,8 @@
 	 </div>
 
   
-  <div class="navbar">
+  <div class="navbar" id="navbar">
+  	<button class="closeButton" id="closeBut" onclick="close_menu()">&times; </button>
     <a href ="architecture.html">Computer Architecture</a> 
     <a href ="schoolprogramming.html">Programming Assignments</a>
     <a href ="reports.html">Reports &<br>Analysis</a>

@@ -1,6 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+<script>
+function open_menu(){
+  document.getElementById("navbar").style.width = "200px";
+}
+function close_menu(){
+  document.getElementById("navbar").style.width = "0"; 
+}
+</script>
 <title>Matt Sullivan</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,6 +16,7 @@
 <link rel="stylesheet" href="style.css">
 
 <body>
+<button class="menuButton" id="navbut" onclick="open_menu()">&#9776</button>
   <div class="title">
 <h1>Slice and Dice</h1>
 <p>A website about Computer Science, Science Fiction, Gaming, and RPGs</p>
@@ -47,7 +56,8 @@
   <h6> CHANGELOG: Added projects to Programming, Reports, and Personal pages. Added About Me page. Misc upkeep.</h6>
   <hr>
   </div>
-  <div class="navbar">
+  <div class="navbar" id="navbar">
+	<button class="closeButton" id="closeBut" onclick="close_menu()">&times; </button>
     <a href ="architecture.html">Computer Architecture</a> 
     <a href ="schoolprogramming.html">Programming Assignments</a>
     <a href ="reports.html">Reports &<br>Analysis</a>
@@ -59,6 +69,7 @@
   <div class="rightbar">
     <p>I didn't originally have a right sidebar, but the balance of the webpage seemed off, so I added this to the right side where ads would normally be. Symmetry makes me happy.</p>
   </div>
-    
+}
+	
 </body>
 </html>

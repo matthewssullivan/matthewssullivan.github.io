@@ -2,6 +2,14 @@
 <html lang="en">
 <head>
 <title>Computer Architecture</title>
+<script>
+function open_menu(){
+  document.getElementById("navbar").style.width = "200px";
+}
+function close_menu(){
+  document.getElementById("navbar").style.width = "0"; 
+}
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -12,6 +20,8 @@ body {
 </head>
 <link rel="stylesheet" href="style.css">
 <body>
+<button class="menuButton" id="navbut" onclick="open_menu()">&#9776</button>
+
   <div class="title">
 <h1>Advanced Computer Architecture</h1>
   <hr>
@@ -27,7 +37,8 @@ body {
   
   <p><a href="index.html">Back</a></p>
   </div>
-  <div class="navbar">
+  <div class="navbar" id="navbar">
+  	<button class="closeButton" id="closeBut" onclick="close_menu()">&times; </button>
     <a href ="architecture.html">Computer Architecture</a> 
     <a href ="schoolprogramming.html">Programming Assignments</a>
     <a href ="reports.html">Reports &<br>Analysis</a>

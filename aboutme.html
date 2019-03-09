@@ -2,12 +2,22 @@
 <html lang="en">
 <head>
 <title>Matt Sullivan</title>
+<script>
+function open_menu(){
+  document.getElementById("navbar").style.width = "200px";
+}
+function close_menu(){
+  document.getElementById("navbar").style.width = "0"; 
+}
+</script>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <link rel="stylesheet" href="style.css">
 
 <body>
+<button class="menuButton" id="navbut" onclick="open_menu()">&#9776</button>
+
   <div class="title">
 <h1>About Me</h1>
 <hr>
@@ -29,7 +39,7 @@
 	
 	<h3>More facts in the form of a <a href="Matthew Sullivan Resume3-2019.pdf">Resume</a></h3>
 	
-	<p>I'm a 31 year old Colorado transcript and aspiring computer scientist currently looking to gain industry experience and make
+	<p>I'm a 31 year old Chicago to Colorado transplant and aspiring computer scientist currently looking to gain industry experience and make
 	meaningful contributions with a full-time summer or part-time year long internship.</p>
 	<p>I've started careers in several sectors, including health care, law enforcement, and the military.
 	While each had it's ups and downs, I never felt like I'd found where I belonged until I started coding 
@@ -47,7 +57,8 @@
   </div>
   
   
-  <div class="navbar">
+  <div class="navbar" id="navbar">
+  	<button class="closeButton" id="closeBut" onclick="close_menu()">&times; </button>
     <a href ="architecture.html">Computer Architecture</a> 
     <a href ="schoolprogramming.html">Programming Assignments</a>
     <a href ="reports.html">Reports &<br>Analysis</a>
